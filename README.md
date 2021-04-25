@@ -19,6 +19,7 @@ Mielőtt ezt elkezded, nézd meg a következő videósorozatot:
 ## ⛏️ Használt eszközök
 
 - [Django](https://docs.djangoproject.com/) - Backend
+- [Bootstrap5](https://getbootstrap.com/docs/5.0/) - Frontend
 
 ## Linkek
 

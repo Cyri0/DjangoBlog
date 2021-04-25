@@ -106,8 +106,12 @@
             </div>
             </div>
 
+            <p>{{ form.errors }}</p>
+
             <div class="row">
-                <div class="col-sm-6"></div>
+                <div class="col-sm-6">
+                    <p>Már van fiókod? <a href="{% url 'login' %}">Bejelentkezés</a></p>
+                </div>
                 <div class="col-sm-6">
                     <input type="submit" value="Regisztrálok!">
                 </div>
