@@ -4,7 +4,6 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 
-
 def loginPage(request):
     if request.user.is_authenticated:
         return redirect('home')
