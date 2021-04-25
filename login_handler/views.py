@@ -4,9 +4,6 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 
 def loginPage(request):
-    print('Futok!')
-    context = {}
-
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -15,8 +12,14 @@ def loginPage(request):
         if user is not None:
             login(request, user)
             return redirect('home')
-    return render(request, 'login.html', context)
+        else:
+            messages.info(request, 'Hibás felhasználónév vagy jelszó!')
+            return render(request, 'login.html')
+    return render(request, 'login.html')
 
+def logoutPage(request):
+    logout(request)
+    return redirect('login')
 
 def registerPage(request):
     form = CreateUserForm()
