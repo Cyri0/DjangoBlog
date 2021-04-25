@@ -1,18 +1,18 @@
 from django.shortcuts import render
-from django.contrib.auth.forms import UserCreationForm
+from .forms import CreateUserForm
 
 def loginPage(request):
     context = {}
     return render(request, 'login.html', context)
 
 def registerPage(request):
-    form = UserCreationForm()
+    form = CreateUserForm()
     context = {
         'form':form
     }
 
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = CreateUserForm(request.POST)
         if form.is_valid():
             form.save()
 
