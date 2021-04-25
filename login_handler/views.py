@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from .forms import CreateUserForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
+
 
 def loginPage(request):
     if request.method == 'POST':
@@ -37,6 +39,7 @@ def registerPage(request):
 
     return render(request, 'register.html', context)
 
+@login_required(login_url='login')
 def homePage(request):
     context={}
     return render(request, 'base.html', context)
