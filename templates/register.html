@@ -1,1 +1,16 @@
 <h1>REGISZTRÁCIÓ</h1>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form.username.label}}
+    {{form.username}}
+    <br>
+    {{form.password1.label}}
+    {{form.password1}}
+    <br>
+    {{form.password2.label}}
+    {{form.password2}}
+    <br>
+    <input type="submit" value="Regisztrálok!">
+
+</form>
