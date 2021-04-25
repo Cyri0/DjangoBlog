@@ -1,0 +1,11 @@
+<form action="" method="POST">
+    {% csrf_token %}
+    <label for="title">Cím:</label>
+    <input type="text" name="title" id="title">
+    <br>
+    <label for="content">Tartalom:</label>
+    <textarea name="content" id="content" cols="30" rows="10">        
+    </textarea>
+    <br>
+    <input type="submit" value="Posztolok!">
+</form>

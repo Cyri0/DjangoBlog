@@ -15,12 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from login_handler import views
+from login_handler.views import homePage, loginPage, registerPage, logoutPage
+from blog_post.views import newPostPage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.homePage, name='home'),
-    path('login/', views.loginPage, name='login'),
-    path('register/', views.registerPage, name='register'),
-    path('logout/', views.logoutPage, name='logout')
+    path('', homePage, name='home'),
+    path('login/', loginPage, name='login'),
+    path('register/', registerPage, name='register'),
+    path('logout/', logoutPage, name='logout'),
+    path('newPost/', newPostPage, name='new_post')
 ]
