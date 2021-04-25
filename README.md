@@ -5,25 +5,21 @@
 
 <h3 align="center">Django Blog</h3>
 
-<div align="center">
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-</div>
-
 ---
 
-## 🧐 About <a name = "about"></a>
+## 🧐 Mi ez?
 
 Webfejlesztős óra, backend részéhez: Autentikáció Djago-val
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+## 🏁 Kezdés előtt...
 
 Mielőtt ezt elkezded, nézd meg a következő videósorozatot:
 - [ToDoApp Djangoval](https://www.youtube.com/watch?v=J2qhWBITTSE&list=PLx6_ItNYiFtxnrrahYAvyK92ISDNjbMDj)
 
-## ⛏️ Built Using <a name = "built_using"></a>
+## ⛏️ Használt eszközök
 
 - [Django](https://docs.djangoproject.com/) - Backend
 
-## Links
+## Linkek
 
 - [UserAuthenticationForm](https://docs.djangoproject.com/en/3.2/topics/auth/default/)
