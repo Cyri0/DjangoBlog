@@ -43,8 +43,3 @@ def registerPage(request):
             return redirect('login')
 
     return render(request, 'register.html', context)
-
-@login_required(login_url='login')
-def homePage(request):
-    context={}
-    return render(request, 'base.html', context)
