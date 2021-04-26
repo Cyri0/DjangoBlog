@@ -18,6 +18,8 @@ from django.urls import path
 from login_handler.views import loginPage, registerPage, logoutPage
 from blog_post.views import newPostPage
 from .views import homePage
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),

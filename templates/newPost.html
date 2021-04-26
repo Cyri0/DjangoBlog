@@ -87,6 +87,7 @@
 
     <div class="container">
         <h1>Új poszt</h1>
+        <h4><a href="{% url 'home' %}">Kezdőlap</a></h4>
         <form action="" method="POST">
             {% csrf_token %}
             <label for="title">Cím:</label>
