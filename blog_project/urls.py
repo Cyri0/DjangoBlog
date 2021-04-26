@@ -29,3 +29,5 @@ urlpatterns = [
     path('logout/', logoutPage, name='logout'),
     path('newPost/', newPostPage, name='new_post')
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
